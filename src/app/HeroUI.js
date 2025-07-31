@@ -4,7 +4,10 @@ import {HeroUIProvider, ToastProvider} from "@heroui/react";
 export default function HeroUIWrapper({ children }) {
   return (
     <HeroUIProvider>
-      <ToastProvider />
+      <ToastProvider 
+      
+
+      />
       {children}
     </HeroUIProvider>
   );

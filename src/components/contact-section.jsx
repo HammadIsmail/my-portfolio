@@ -1,5 +1,5 @@
 import React,{useRef} from "react";
-import { Card, CardBody,  Button } from "@heroui/react";
+import { Card, CardBody,  Button, toast } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -17,9 +17,11 @@ export function ContactSection() {
     if (!form.current) return;
 
     // Replace with your EmailJS credentials
-    const serviceId = 'service_42m4lca';
-    const templateId = 'template_5rfqb7d';
-    const userId = 'jKYS-Zm28fRW5zF8Q';
+const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const userId = process.env.NEXT_PUBLIC_USER_ID;
+
+    console.log(serviceId, templateId, userId);
 
     emailjs
       .sendForm(serviceId, templateId, form.current, userId)
@@ -56,6 +58,7 @@ export function ContactSection() {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+  
 
   return (
     <section

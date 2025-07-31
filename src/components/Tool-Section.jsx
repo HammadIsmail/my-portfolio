@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const tools = [
   { name: "Git", icon: "logos:git-icon", bg: "bg-white" },
-  { name: "GitHub", icon: "mdi:github", bg: "bg-gray-900 text-white" },
+  { name: "GitHub", icon: "mdi:github", bg: "bg-white text-gray-900" },
   { name: "Postman", icon: "logos:postman-icon", bg: "bg-orange-50 text-orange-700" },
   { name: "Docker", icon: "logos:docker-icon", bg: "bg-blue-50 text-blue-700" },
   { name: "Ollama", icon: "simple-icons:ollama", bg: "bg-purple-50 text-purple-700" },

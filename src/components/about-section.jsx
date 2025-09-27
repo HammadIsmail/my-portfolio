@@ -15,13 +15,17 @@ const skills = [
   { name: "Next.js", icon: "logos:nextjs-icon" },
   { name: "TypeScript", icon: "logos:typescript-icon" },
   { name: "Node.js", icon: "logos:nodejs-icon" },
+  { name: "React Native", icon: "logos:react" },
   { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
   { name: "MongoDB", icon: "logos:mongodb-icon" },
   { name: "PostgreSQL", icon: "logos:postgresql" },
-  { name: "SQLite", icon: "devicon:sqlite" },         // devicon or simple-icons has this
-  { name: "MS SQL", icon: "devicon:microsoftsqlserver" } // Or a custom icon you prefer
+  { name: "SQLite", icon: "devicon:sqlite" },
+  { name: "Socket.IO", icon: "simple-icons:socketdotio" },
+  { name: "AWS", icon: "logos:aws" },
+  { name: "FastAPI", icon: "devicon:fastapi" },
+  { name: "AI Integration", icon: "hugeicons:ai-brain-04" },
+  { name: "OpenAI APIs", icon: "simple-icons:openai" }
 ];
-
 
   const experiences = [
  {
@@ -98,16 +102,15 @@ const skills = [
               className="max-w-2xl text-wrap text-justify text-default-600"
               variants={itemVariants}
             >
-             {`
+             {`Hi, I'm Hammad - a Full-Stack Developer who builds scalable web and mobile applications that drive real business results.
 
-Hi, I'm Hammad, a passionate Computer Science student at UET Lahore (Batch 2023-2027), currently in my 4th semester. With hands-on experience in full-stack web development, I've worked extensively with the MERN stack (MongoDB, Express, React, Node.js). My expertise includes developing dynamic and user-friendly applications, and I'm always keen on learning and adapting new technologies.
+I specialize in the complete MERN stack ecosystem, delivering end-to-end solutions from concept to cloud deployment. My expertise spans modern React applications with Next.js, responsive mobile apps using React Native and Expo, and robust backend systems powered by Express.js and FastAPI.
 
-I've also dived into peer-to-peer file-sharing using WebRTC, AI projects, and network-based applications. My projects demonstrate my versatility, from creating a Library Management System to an AI-powered audio interview simulator and social media platforms.
+I excel at creating real-time applications with WebSocket implementation using Socket.IO, optimizing database solutions with MongoDB, PostgreSQL, and MySQL, and deploying scalable solutions on AWS cloud infrastructure. Additionally, I integrate cutting-edge AI capabilities into applications using generative AI technologies and OpenAI APIs, creating intelligent features that enhance user experiences.
 
-As a dedicated learner, I've built a strong foundation in both backend and frontend technologies, with a special focus on developing seamless user experiences and secure, scalable applications.
+My experience includes working remotely with international teams, including a Poland-based startup, ensuring seamless collaboration across time zones and delivering innovative AI-powered solutions.
 
-
-`}
+Whether you need a dynamic web application with real-time features, an AI-powered mobile app, or a complete cloud-hosted digital solution with intelligent automation, I deliver efficient, scalable code that grows with your business.`}
             </motion.p>
           </motion.div>
           
@@ -116,7 +119,7 @@ As a dedicated learner, I've built a strong foundation in both backend and front
               variants={itemVariants}
               className="flex flex-col gap-6"
             >
-              <Card className="overflow-hidden border-none  rounded-2xl shadow-xl">
+              <Card className="overflow-hidden border-none rounded-2xl shadow-xl">
                 <CardBody className="p-0">
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10" />
@@ -153,9 +156,10 @@ As a dedicated learner, I've built a strong foundation in both backend and front
                         variants={containerVariants}
                       >
                         {[
-                          { icon: "lucide:map-pin", text: "Burewala,Punjab,Pakistan", color: "text-pink-500" },
+                          { icon: "lucide:map-pin", text: "Burewala, Punjab, Pakistan", color: "text-pink-500" },
                           { icon: "lucide:mail", text: "ranahammadismail@gmail.com", color: "text-purple-500" },
                           { icon: "lucide:briefcase", text: "Available for freelance", color: "text-blue-500" },
+                          { icon: "lucide:globe", text: "Remote collaboration worldwide", color: "text-green-500" },
                         ].map((item, index) => (
                           <motion.div 
                             key={index}
@@ -165,7 +169,7 @@ As a dedicated learner, I've built a strong foundation in both backend and front
                             transition={{ type: "spring", stiffness: 300 }}
                           >
                             <Icon icon={item.icon} className={item.color} />
-                            <span>{item.text}</span>
+                            <span className="text-sm">{item.text}</span>
                           </motion.div>
                         ))}
                       </motion.div>
@@ -196,8 +200,9 @@ As a dedicated learner, I've built a strong foundation in both backend and front
                             <div className="flex items-center gap-2 text-sm text-default-500">
                               <span>{exp.company}</span>
                               <span>•</span>
-                              <span>{exp.period}</span>
+                              <span>{exp.location} ({exp.workType})</span>
                             </div>
+                            <div className="text-xs text-default-400 mb-1">{exp.period}</div>
                             <p className="mt-1 text-sm text-justify text-default-600">{exp.description}</p>
                           </div>
                         </motion.div>
@@ -218,7 +223,7 @@ As a dedicated learner, I've built a strong foundation in both backend and front
                 animate={inView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h3 className="text-xl font-semibold text-center relative z-10">My Skills</h3>
+                <h3 className="text-xl font-semibold text-center relative z-10">Technical Skills</h3>
                 <motion.div 
                   className="absolute -bottom-2 left-0 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg -z-10"
                   initial={{ width: 0 }}
@@ -252,66 +257,7 @@ As a dedicated learner, I've built a strong foundation in both backend and front
                 ))}
               </motion.div>
 
-                <ToolsSection/>
-
-              {/* <motion.div
-                variants={itemVariants}
-                className="mt-4"
-              >
-                <Card className="border-none shadow-xl overflow-hidden bg-gradient-to-br from-purple-500/5 to-pink-500/5">
-                  <CardBody>
-                    <div className="flex flex-col gap-2">
-                      <h3 className="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-                        Languages
-                      </h3>
-                      <div className="flex flex-col gap-3 mt-2">
-                        <div>
-                          <div className="flex justify-between mb-1">
-                            <span className="text-sm">English</span>
-                            <span className="text-sm text-default-500">Native</span>
-                          </div>
-                          <div className="h-2 bg-default-200 rounded-full overflow-hidden">
-                            <motion.div 
-                              className="h-full bg-gradient-to-r from-purple-500 to-pink-500"
-                              initial={{ width: 0 }}
-                              animate={inView ? { width: "100%" } : { width: 0 }}
-                              transition={{ duration: 1, delay: 0.5 }}
-                            />
-                          </div>
-                        </div>
-                        <div>
-                          <div className="flex justify-between mb-1">
-                            <span className="text-sm">Spanish</span>
-                            <span className="text-sm text-default-500">Fluent</span>
-                          </div>
-                          <div className="h-2 bg-default-200 rounded-full overflow-hidden">
-                            <motion.div 
-                              className="h-full bg-gradient-to-r from-purple-500 to-pink-500"
-                              initial={{ width: 0 }}
-                              animate={inView ? { width: "85%" } : { width: 0 }}
-                              transition={{ duration: 1, delay: 0.6 }}
-                            />
-                          </div>
-                        </div>
-                        <div>
-                          <div className="flex justify-between mb-1">
-                            <span className="text-sm">French</span>
-                            <span className="text-sm text-default-500">Intermediate</span>
-                          </div>
-                          <div className="h-2 bg-default-200 rounded-full overflow-hidden">
-                            <motion.div 
-                              className="h-full bg-gradient-to-r from-purple-500 to-pink-500"
-                              initial={{ width: 0 }}
-                              animate={inView ? { width: "60%" } : { width: 0 }}
-                              transition={{ duration: 1, delay: 0.7 }}
-                            /> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </motion.div>*/}
+              <ToolsSection/>
             </motion.div>
           </div>
         </motion.div>

@@ -46,9 +46,8 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <h4 className="mb-2 font-semibold text-default-700">Services</h4>
             <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-purple-500">Web Development</Link>
-            {/* <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-blue-500">UI/UX Design</Link>
             <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-pink-500">Mobile Apps</Link>
-            <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-cyan-500">Consulting</Link> */}
+            <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-cyan-500">AI Integration & AI Agents Development</Link>
           </div>
           
           <div className="flex flex-col gap-2">

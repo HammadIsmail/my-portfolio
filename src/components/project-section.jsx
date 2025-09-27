@@ -38,7 +38,7 @@ export function ProjectsSection() {
       title: "Marketing Agency Website",
       description: "Modern marketing agency website with advanced animations, interactive elements, and seamless user experience. Features real-time analytics integration and dynamic content management.",
       image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1742640507/Marketing_site_vzhgfu.png",
-      tags: ["React", "Tailwind", "Framer Motion", "Analytics"],
+      tags: ["React", "Tailwind", "Framer Motion", "Analytics", "CMS"],
       demoUrl: "https://prfsd.netlify.app/",
       codeUrl: "#",
       workType: "freelance",

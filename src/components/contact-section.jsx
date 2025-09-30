@@ -263,7 +263,7 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
                   {
                     icon: "lucide:phone",
                     label: "Phone",
-                    value: "+92 3067565014",
+                    value: "+92 3207913314",
                     color: "from-purple-500 to-pink-500",
                   },
                   {

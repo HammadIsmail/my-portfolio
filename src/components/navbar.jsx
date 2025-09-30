@@ -53,7 +53,7 @@ export function NavigationBar() {
           {[
             { name: "Home", href: "#", color: "outline-purple-500 hover:text-purple-500" },
             { name: "About", href: "#about", color: "outline-purple-500 hover:text-blue-500" },
-            // { name: "Projects", href: "#projects", color: "outline-purple-500 hover:text-pink-500" },
+            { name: "Projects", href: "#projects", color: "outline-purple-500 hover:text-pink-500" },
             { name: "Contact", href: "#contact", color: "outline-purple-500 hover:text-cyan-500" }
           ].map((item, index) => (
             <NavbarItem key={item.name}>

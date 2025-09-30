@@ -39,7 +39,7 @@ export function Footer() {
             <h4 className="mb-2 font-semibold text-default-700">Quick Links</h4>
             <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-purple-500">Home</Link>
             <Link href="#about" color="foreground" underline="hover" className="text-default-600 hover:text-blue-500">About</Link>
-            {/* <Link href="#projects" color="foreground" underline="hover" className="text-default-600 hover:text-pink-500">Projects</Link> */}
+            <Link href="#projects" color="foreground" underline="hover" className="text-default-600 hover:text-pink-500">Projects</Link>
             <Link href="#contact" color="foreground" underline="hover" className="text-default-600 hover:text-cyan-500">Contact</Link>
           </div>
           
@@ -47,7 +47,7 @@ export function Footer() {
             <h4 className="mb-2 font-semibold text-default-700">Services</h4>
             <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-purple-500">Web Development</Link>
             <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-pink-500">Mobile Apps</Link>
-            <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-cyan-500">AI Integration & AI Agents Development</Link>
+            <Link href="#" color="foreground" underline="hover" className="text-default-600 hover:text-cyan-500">AI Integrations & AI Agents Development</Link>
           </div>
           
           <div className="flex flex-col gap-2">
@@ -58,7 +58,7 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-2 text-default-600">
               <Icon icon="lucide:phone" className="text-purple-500" width={16} />
-              <span>+92 3067565014</span>
+              <span>+92 3207913314</span>
             </div>
             <div className="flex items-center gap-2 text-default-600">
               <Icon icon="lucide:map-pin" className="text-pink-500" width={16} />

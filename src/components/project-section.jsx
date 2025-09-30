@@ -27,9 +27,9 @@ export function ProjectsSection() {
     { key: "web", label: "Web Dev", icon: "solar:globe-bold-duotone", color: "from-blue-600 to-cyan-700" },
     { key: "ai", label: "AI/ML", icon: "solar:cpu-bolt-bold-duotone", color: "from-purple-600 to-pink-700" },
     { key: "mobile", label: "Mobile", icon: "solar:phone-bold-duotone", color: "from-green-600 to-teal-700" },
-    { key: "game", label: "Games", icon: "solar:gameboy-bold-duotone", color: "from-red-600 to-orange-700" },
-    { key: "blockchain", label: "Web3", icon: "solar:link-circle-bold-duotone", color: "from-yellow-600 to-amber-700" },
-    { key: "cyber", label: "Security", icon: "solar:shield-check-bold-duotone", color: "from-gray-800 to-slate-900" }
+    // { key: "game", label: "Games", icon: "solar:gameboy-bold-duotone", color: "from-red-600 to-orange-700" },
+    // { key: "blockchain", label: "Web3", icon: "solar:link-circle-bold-duotone", color: "from-yellow-600 to-amber-700" },
+    // { key: "cyber", label: "Security", icon: "solar:shield-check-bold-duotone", color: "from-gray-800 to-slate-900" }
   ];
 
   const projects = [
@@ -114,19 +114,76 @@ export function ProjectsSection() {
     //   color: "from-gray-800 to-slate-900",
     //   private: true
     // },
-    // {
-    //   id: 7,
-    //   title: "Immersive 3D Experience",
-    //   description: "Cutting-edge 3D web experience with physics simulation, interactive environments, and real-time multiplayer capabilities using modern WebGL technologies.",
-    //   image: "https://picsum.photos/seed/3dexperience/800/600",
-    //   tags: ["Three.js", "WebGL", "TypeScript", "Socket.io"],
-    //   demoUrl: "#",
-    //   codeUrl: "#",
-    //   workType: "experimental",
-    //   techDomain: ["game", "web"],
-    //   color: "from-red-600 to-orange-700",
-    //   private: false
-    // }
+    {
+      id: 2,
+      title: "Tech Company Website",
+      description: "Sleek and modern website for InfoQuestPro, a tech solutions provider. Features interactive service showcases.",
+      image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1759206929/Capture_gmbswi.png",
+      tags: ["NextJs", "Tailwind", "TypeScript", "Framer Motion"],
+      demoUrl: "https://info-quest-pro.vercel.app/",
+      codeUrl: "https://github.com/HammadIsmail/info-quest-pro",
+      workType: "professional",
+      techDomain: ["web"],
+      color: "from-red-600 to-orange-700",
+      private: false
+    },
+      {
+      id: 3,
+      title: "Tech StartUp Product Website",
+      description: "A sleek and modern website for Snapfit, a tech solutions provider. It includes interactive service showcases, a tools listing, pricing page, dynamic inspiration page, and contact page — all designed for a seamless user experience.",
+      image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1759207689/Capture_a2ytbu.png",
+      tags: ["React", "Tailwind", "TypeScript", "Framer Motion"],
+      demoUrl: "https://snapfit-hc66.vercel.app/",
+      codeUrl: "#",
+      workType: "professional",
+      techDomain: ["web"],
+      color: "from-gray-700 to-lime-700",
+      private: true,
+      featured: true
+    },
+      {
+      id: 4,
+      title: "Social Media Platform",
+      description: "Spill the Tea is a personal project — a social media platform where users can share thoughts, ideas, and experiences in a fun, engaging way. It includes real-time chat, post creation, a dynamic feed, and the ability to create communities.",
+      image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1759208100/Capture_wzsxtf.png",
+      tags: ["React", "Tailwind", "TypeScript", "Framer Motion","PostgreSQL","NodeJS","Socket.io","ExpressJS","Prisma","Redis"],
+      demoUrl: "https://www.spill-the-tea.online/",
+codeUrl: "#",
+      workType: "personal",
+      techDomain: ["web"],
+      color: "from-white to-orange-700",
+      private: true,
+      featured: true
+    },
+     {
+      id: 5,
+      title: "Ride Sharing Platform",
+      description: "ShareRide is a personal project — a Ride Sharing platform where users can share rides engaging way. It includes real-time chat, post creation, a dynamic feed.",
+      image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1759216128/Capture_cyu1gp.png",
+      tags: ["React", "Tailwind", "TypeScript", "Framer Motion","PostgreSQL","NodeJS","Socket.io","ExpressJS","Prisma","Redis"],
+      demoUrl: "https://www.shareride.site/",
+codeUrl: "#",
+      workType: "personal",
+      techDomain: ["web"],
+      color: "from-white to-blue-700",
+      private: true,
+      featured: true
+    },
+     {
+      id: 6,
+      title: "Canva Like Clone",
+      description: "Canva Clone is a personal project — a Canva like online editor where users can create stunning graphics, presentations, and social media posts with ease.",
+      image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1759252076/Capture_ncfxgy.png",
+      tags: ["Nextjs", "Tailwind", "TypeScript", "FiberJs","Mongodb",],
+      demoUrl: "https://my-canvas-editor.vercel.app/",
+      codeUrl: "https://github.com/HammadIsmail/my-canvas-editor",
+      workType: "personal",
+      techDomain: ["web"],
+      color: "from-white to-purple-700",
+      private: false,
+      featured: true
+    }
+
   ];
 
   const filteredProjects = useMemo(() => {

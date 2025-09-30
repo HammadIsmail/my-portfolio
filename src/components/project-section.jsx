@@ -182,6 +182,20 @@ codeUrl: "#",
       color: "from-white to-purple-700",
       private: false,
       featured: true
+    },
+    {
+      id: 7,
+      title: "Ecommerce Platform",
+      description: "EasyShop is a professional project — a full-featured e-commerce platform that offers a seamless shopping experience with advanced product management, secure payment integration, and real-time order tracking.",
+      image: "https://res.cloudinary.com/dbbk9wg2i/image/upload/v1759256114/Capture_htgjkq.png",
+      tags: ["Nextjs", "Tailwind", "TypeScript", "Supabase",],
+      demoUrl: "https://easyshop-three.vercel.app/",
+      codeUrl: "#",
+      workType: "professional",
+      techDomain: ["web"],
+      color: "from-white to-gray-700",
+      private: true,
+      featured: true
     }
 
   ];

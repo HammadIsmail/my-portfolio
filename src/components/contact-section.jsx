@@ -65,7 +65,7 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
       id="contact"
       className="py-24 bg-gradient-to-b from-background via-content1/50 to-content1"
     >
-      <div className="container max-w-5xl px-4 mx-auto">
+      <div className="container  max-w-5xl px-4 mx-auto">
         <motion.div
           className="flex flex-col items-center mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -118,7 +118,7 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
                     <div className="max-w-md mx-auto ">
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-gray-700"
+                        className="block text-sm font-medium text-default-500"
                       >
                         Name
                       </label>
@@ -145,7 +145,7 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
                     <div className="max-w-md mx-auto ">
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-700"
+                        className="block text-sm font-medium text-default-500"
                       >
                         Email address
                       </label>
@@ -170,7 +170,7 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
                     transition={{ duration: 0.4, delay: 0.6 }}
                   >
                      <div className="max-w-md mx-auto ">
-  <label htmlFor="email" className="block text-sm font-medium text-gray-700">Subject</label>
+  <label htmlFor="email" className="block text-sm font-medium text-default-500">Subject</label>
   <div className="mt-1">
     <input
       type="Subject"
@@ -192,7 +192,7 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
                     transition={{ duration: 0.4, delay: 0.7 }}
                   >
                 <div className="max-w-md mx-auto ">
-  <label htmlFor="message" className="block text-sm font-medium text-gray-700">Your Message</label>
+  <label htmlFor="message" className="block text-sm font-medium text-default-500">Your Message</label>
   <div className="mt-1">
     <textarea
       id="message"

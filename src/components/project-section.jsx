@@ -137,7 +137,7 @@ export function ProjectsSection() {
       codeUrl: "#",
       workType: "professional",
       techDomain: ["web"],
-      color: "from-gray-700 to-lime-700",
+      color: "from-lime-400 to-lime-700",
       private: true,
       featured: true
     },
@@ -151,7 +151,7 @@ export function ProjectsSection() {
 codeUrl: "#",
       workType: "personal",
       techDomain: ["web"],
-      color: "from-white to-orange-700",
+      color: "from-orange-400 to-orange-700",
       private: true,
       featured: true
     },
@@ -165,7 +165,7 @@ codeUrl: "#",
 codeUrl: "#",
       workType: "personal",
       techDomain: ["web"],
-      color: "from-white to-blue-700",
+      color: "from-blue-400 to-blue-700",
       private: true,
       featured: true
     },
@@ -179,7 +179,7 @@ codeUrl: "#",
       codeUrl: "https://github.com/HammadIsmail/my-canvas-editor",
       workType: "personal",
       techDomain: ["web"],
-      color: "from-white to-purple-700",
+      color: "from-purple-400 to-purple-700",
       private: false,
       featured: true
     },
@@ -193,7 +193,7 @@ codeUrl: "#",
       codeUrl: "#",
       workType: "professional",
       techDomain: ["web"],
-      color: "from-white to-gray-700",
+      color: "from-gray-400 to-gray-700",
       private: true,
       featured: true
     }
@@ -378,7 +378,7 @@ codeUrl: "#",
                   >
                     {selectedTechDomain === domain.key && (
                       <motion.div
-                        className={`absolute inset-0 bg-gradient-to-r ${domain.color}`}
+                        className={`absolute inset-0 bg-gradient-to-r  ${domain.color}`}
                         layoutId="techDomainBackground"
                         transition={{ type: "spring", duration: 0.6 }}
                       />
@@ -477,7 +477,7 @@ codeUrl: "#",
                             <Chip
                               key={domain}
                               size="sm"
-                              className={`bg-gradient-to-r ${domainConfig.color} text-white shadow-lg backdrop-blur-sm`}
+                              className={`bg-gradient-to-r ${domainConfig.color} text-white px-4 shadow-lg backdrop-blur-sm`}
                               startContent={<Icon icon={domainConfig.icon} className="text-xs" />}
                             >
                               <span className="text-xs font-medium">{domainConfig.label}</span>
@@ -585,7 +585,7 @@ codeUrl: "#",
           </motion.div>
         )}
         
-        {/* CTA Section */}
+        {/* CTA Section
         {filteredProjects.length > 0 && (
           <motion.div 
             className="text-center mt-20"
@@ -607,7 +607,7 @@ codeUrl: "#",
               Explore Full Portfolio
             </Button>
           </motion.div>
-        )}
+        )} */}
       </div>
     </section>
   );
